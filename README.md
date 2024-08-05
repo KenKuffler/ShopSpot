@@ -1,2 +1,2 @@
 # Project-1
-Repository for first major project 
+Repository for first major project
