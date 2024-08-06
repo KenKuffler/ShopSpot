@@ -12,6 +12,12 @@ TODO: General Sizing and Spacing formatting for text, product cards, etc.
 
 */
 
+/* 
+
+element, and class styles for webpage headers 
+
+*/
+
 header {
     display: flex;
     justify-content: space-around;
