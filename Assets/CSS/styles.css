@@ -142,3 +142,36 @@ footer h2 {
 footer a {
     text-decoration: none;
 }
+
+@media screen and (max-width: 390px) {
+  body {
+      display: flex;
+      flex-direction: column;
+      width: fit-content;
+      height: fit-content;
+      max-height: 1vw;
+      max-width: 385px;
+  }
+  main {
+      flex-shrink: 3;
+  }
+  header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-image: url("../Images/header.avif");
+      background-size: cover;
+      background-position: center;
+      min-width: 80%;
+  }
+  header h1 {
+      font-size: 2rem;
+  }
+  .cartBtn {
+    margin-right: 0rem;
+  }
+  .dropBtn {
+    margin-left: 0rem;
+  }
+}
