@@ -66,6 +66,8 @@ header a {
         justify-content: space-around;
         max-width: 75%;
         background-image: url("../Images/header.avif");
+        background-size: cover;
+        background-position: center;
         padding: 1rem;
         border: 1px solid #046767;
         border-radius: 5px;
@@ -80,6 +82,10 @@ header a {
         margin-left: 25%;
         margin-top: 5%;
     }
+
+.form-header {
+    color: #fff;
+}
 
 form {
         display: flex;
@@ -101,7 +107,7 @@ form .row label {
         display: block;
         text-align: center;
         margin-top: 5px;
-        color: #000000;
+        color: #fff;
     }
 
 form input[type="name"],
