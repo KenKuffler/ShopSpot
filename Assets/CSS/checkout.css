@@ -1,0 +1,87 @@
+main > h2 {
+    font-size: 3rem;
+    color: #cf4b02;
+    align-content: center;
+    text-decoration: underline;
+}
+
+.container {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: fit-content;
+    margin-top: 2%;
+    margin-left: 15%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    background-color: #fff6e6;
+    display: inline-flex;
+    max-height: 10rem;
+    }
+
+.container:last-child {
+    margin-bottom: 5%;
+}
+
+    .container img {
+        width: 15%;
+        height: 20%;
+        margin-top: 1%;
+        object-fit: cover;
+    }
+
+    .container h2 {
+        font-size: 1.5rem;
+        color: #333;
+        margin-left: 1rem;
+        align-content: center;
+        text-decoration: underline;
+    }
+
+    .container > .text {
+        font-size: 1rem;
+        color: #333;
+        margin-left: 1rem;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    .container > .price {
+        margin-top: 1%;
+    }
+
+    
+    @media (min-width: 576px) {
+        .container-sm, .container {
+            max-width: 540px;
+            margin-right: 20rem;
+        }
+      }
+      @media (min-width: 768px) {
+        .container-md, .container-sm, .container {
+          max-width: 720px;
+        }
+      }
+      @media (min-width: 992px) {
+        .container-lg, .container-md, .container-sm, .container {
+          max-width: 960px;
+        }
+      }
+      @media (min-width: 1200px) {
+        .container-xl, .container-lg, .container-md, .container-sm, .container {
+          max-width: 1140px;
+        }
+      }
+      @media (min-width: 1400px) {
+        .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+          max-width: 1320px;
+        }
+      }
+
+      :root {
+        --bs-breakpoint-xs: 0;
+        --bs-breakpoint-sm: 576px;
+        --bs-breakpoint-md: 768px;
+        --bs-breakpoint-lg: 992px;
+        --bs-breakpoint-xl: 1200px;
+        --bs-breakpoint-xxl: 1400px;
+      }
