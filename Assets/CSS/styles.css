@@ -81,6 +81,7 @@ header a {
   
   /* Dropdown Content (Hidden by Default) */
   .dropdown-content {
+    z-index: 9999;
     display: none;
     position: absolute;
     background-color: #02243a;
