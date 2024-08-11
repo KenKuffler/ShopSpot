@@ -18,6 +18,15 @@ element, and class styles for webpage headers
 
 */
 
+/*dark mode and light mode settings */
+.dark-body {
+  background-color:  #fff6e6;
+}
+
+.light-body {
+  background-image: linear-gradient(#ffffff, #b1b1b1);
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -33,9 +42,8 @@ header {
   justify-content: space-around;
   align-items: center;
   padding: 1rem 2rem;
-  background-image: url("../Images/header.avif");
-  background-size: cover;
-  background-position: center;
+  background-color: #fff6e6;
+  border-bottom: solid #cf4b02;
   
 }
 
@@ -46,30 +54,35 @@ header h1 {
   font-size: 3rem;
   font-weight: 700;
   line-height: 2.5rem;
-  color: rgb(223, 223, 223);
-  -webkit-text-fill-color:rgb(255, 255, 255);
-  -webkit-text-stroke: 1px black;
+  color: #cf4b02;
 }
 
 header a {
-  color: #fff;
+  color: #cf4b02;
   text-decoration: none;
+}
+
+h2,
+p {
+    display: block;
+    text-align: center;
 }
 
 /* Dropdown Button */
 .dropBtn {
     margin-left: 1rem;
-    background-color: #02243a;
-    color: white;
+    background-color: #046767;
     padding: 16px;
-    font-size: 16px;
+    font-size: 20px;
     border: none;
     cursor: pointer;
+    background-color: #fff6e6;
+    border-bottom: solid #cf4b02;
   }
   
   /* Dropdown button on hover & focus */
   .dropBtn:hover, .dropBtn:focus {
-    background-color: #085f99;
+    background-color: #06b8b8;
   }
   
   /* The container <div> - needed to position the dropdown content */
@@ -83,7 +96,7 @@ header a {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #02243a;
+    background-color: #046767;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px #000000;
     right: -3rem;
@@ -98,28 +111,29 @@ header a {
   }
   
   /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #085f99;}
+  .dropdown-content a:hover {background-color: #06b8b8;}
   
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
   .show {display:block;}
 
   .cartBtn { 
     margin-right: 1rem;
-    background-color: #02243a;
-    color: white;
+    color: #cf4b02;
     padding: 16px;
-    font-size: 16px;
-    border: none;
+    font-size: 24px;
     cursor: pointer;
+    border: none;
+    background-color: #fff6e6;
+    border-bottom: solid #cf4b02;
   }
 
   .cartBtn a {
-    color: #fff;
-    text-decoration: none;
+    color: #cf4b02;
+    text-decoration: none;;
   }
 
   .cartBtn:hover, .cartBtn:focus {
-    background-color: #085f99;
+    background-color: #06b8b8;
   }
 
   footer {
@@ -127,18 +141,62 @@ header a {
     justify-content: space-around;
     align-items: center;
     padding: 1rem 2rem;
-    background-image: url("../Images/header.avif");
-    background-size: cover;
-    background-position: center;
+    background-color: #fff6e6;
+    margin-bottom: 0;
+    border-top: solid #cf4b02;
 }
 
 footer h2 {
-    color: #fff;
+    color: #000000;
     text-align: center;
-    padding: 1rem;
+    padding: 1rem; 
 }
 
 
 footer a {
     text-decoration: none;
+}
+
+footer button {
+  border-bottom: solid #cf4b02;
+  background-color: #fff6e6;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
+footer button:hover, footer button:focus {
+  background-color: #cf4b02;
+}
+
+@media screen and (max-width: 390px) {
+  body {
+      display: flex;
+      flex-direction: column;
+      width: fit-content;
+      height: fit-content;
+      max-width: 380px;
+  }
+  main {
+      flex-shrink: 4;
+  }
+  header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-image: url("../Images/header.avif");
+      background-size: cover;
+      background-position: center;
+      min-width: 80%;
+  }
+  header h1 {
+      font-size: 2rem;
+  }
+  .cartBtn {
+    margin-right: -2rem;
+  }
+  .dropBtn {
+    margin-left: 0rem;
+  }
 }
