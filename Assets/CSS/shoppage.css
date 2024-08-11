@@ -1,0 +1,169 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-image: url("../Images/header.avif");
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+header h1 {
+    align-items: center;
+    margin: auto;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    color: rgb(223, 223, 223);
+    -webkit-text-fill-color:rgb(255, 255, 255);
+    -webkit-text-stroke: 1px black;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 98vh;
+
+}
+
+main {
+    flex-grow: 1;
+
+}
+
+/* Dropdown Button */
+.dropBtn {
+    margin-left: 1rem;
+    background-color: #02243a;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropBtn:hover, .dropBtn:focus {
+    background-color: #085f99;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #02243a;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px #000000;
+    right: -3rem;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #085f99;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+.cartBtn { 
+    margin-right: 1rem;
+    background-color: #02243a;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.cartBtn a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.cartBtn:hover, .cartBtn:focus {
+    background-color: #085f99;
+}
+
+img { 
+    
+    
+    
+}
+
+footer {
+    background-color: rgb(205, 62, 0);
+    text-align: center;
+    color: white;
+    padding: 25px;
+    font-size:25px;
+    -webkit-text-fill-color:rgb(255, 255, 255);
+    -webkit-text-stroke: .5px black;
+
+}
+
+a { 
+    
+    
+}
+
+.dark {
+   
+    background-color: rgb(76, 76, 76);
+}
+.light {
+    background-color: white;
+}
+
+h2 {
+    text-align: center;
+    font-size: 35px;
+    
+    -webkit-text-fill-color:rgb(255, 255, 255);
+    -webkit-text-stroke: 1px black;
+    
+}
+
+
+
+
+
+p {
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+
+.container {
+    width:50%;
+    border: transparent;
+    margin: 1em 0;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 0;
+}
+li {
+     
+    font-size: 22px;
+    color:white;
+}
