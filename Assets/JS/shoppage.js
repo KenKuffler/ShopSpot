@@ -18,27 +18,24 @@ window.onclick = function(event) {
 }
 
 
-const addToCartButton = document.getElementById("button1")
-const cartItemsList = document.getElementById('cart-items');
-let cart = []
-function addToCart() {
-  const item = {
-    name: "Nike Dunks",
-    price: 150
-  };
 
-  cart.push(item);
-  updateCartDisplay();
-  
+const enableDarkmode = () => {
+  document.body.classList.add('darkmode')
+  localStorage.setItem('darkmode', 'active')
   
 }
-function updateCartDisplay() {
-  cartItemsList.innerHTML = '';
 
-  cart.forEach((item,index)=>){
-    const listItem = document.createElement('li');
-    listItem.textContent = `${item.name} - $${item.price}`;
-    cartItemsList.appendChild(listItem);
-  });
+const disableDarkmode = () => {
+  document.body.classList.remove('darkmode')
+  localStorage.setItem('darkmode', null)
 }
-addToCartButton.addEventListener("click",addToCart);
+
+if(darkmode === "active") enableDarkmode()
+
+let darkmode = localStorage.getItem('darkmode')
+const themeSwitch = document.getElementById('theme-switch')
+
+themeSwitch.addEventListener("click", () => {
+  darkmode = localStorage.getItem('darkmode')
+  darkmode !== "active" ? enableDarkmode() : disableDarkmode()
+})
