@@ -19,12 +19,12 @@ element, and class styles for webpage headers
 */
 
 /*dark mode and light mode settings */
-.dark-body {
+.light-body {
   background-color:  #fff6e6;
 }
 
-.light-body {
-  background-image: linear-gradient(#ffffff, #b1b1b1);
+.dark-body {
+  background-image: #000000;
 }
 
 body {
@@ -78,6 +78,7 @@ p {
     cursor: pointer;
     background-color: #fff6e6;
     border-bottom: solid #cf4b02;
+    
   }
   
   /* Dropdown button on hover & focus */
@@ -89,6 +90,7 @@ p {
   .dropdown {
     position: relative;
     display: inline-block;
+    z-index: 9999;
 
   }
   
