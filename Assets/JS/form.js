@@ -6,12 +6,18 @@ form.addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent form submission
 
     // Get the form inputs
-    const name = document.querySelector('#name').value;
-    const email = document.querySelector('#email').value;
-    const phone = document.querySelector('#phone').value;
-    const description = document.querySelector('#description').value;
-    const reason = document.querySelector('#reason').value;
+    const nameElement = document.querySelector('#name');
+    const emailElement = document.querySelector('#email');
+    const phoneElement = document.querySelector('#phone');
+    const descriptionElement = document.querySelector('#description');
+    const reasonElement = document.querySelector('#reason');
 
+    // Check if the elements exist before accessing their values
+    const name = nameElement ? nameElement.value : '';
+    const email = emailElement ? emailElement.value : '';
+    const phone = phoneElement ? phoneElement.value : '';
+    const description = descriptionElement ? descriptionElement.value : '';
+    const reason = reasonElement ? reasonElement.value : '';
 
     // Create an object to store the form info
     const formData = {
@@ -32,3 +38,4 @@ form.addEventListener('submit', function(event) {
     // Reset the form
     form.reset();
 });
+

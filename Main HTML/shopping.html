@@ -5,24 +5,22 @@
     <meta charset="UTF-8" />
     <title>Shop Spot - Website Templates</title>
     <link rel="stylesheet" href="../Assets/CSS/shop.css" />
+    <link rel="stylesheet" href="../Assets/CSS/styles.css" />
 </head>
 
 <body>
-    <div class="container">
-        <nav class="navbar">
-            <div class="navbar-brand">Shop Spot</div>
-            <div class="navbar-right">
-                <div class="navbar-cart">
-                    <div class="mode-switch">
-                        <label class="switch">
-                            <input type="checkbox" id="modeToggle">
-                            <span class="slider"></span>
-                        </label>
-                    </div>
-                    Cart (0)
-                </div>
+    <header>
+        <nav class="dropdown">
+            <button onclick="dropDown()" class="dropBtn">More</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="shopping.html">Shopping</a>
+                <a href="about.html">About US</a>
+                <a href="admin.html">Admin</a>
             </div>
         </nav>
+        <h1>ShopSpot©</h1>
+        <button class="cartBtn"><a href="checkout.html">🛒</a></button>         
+    </header>
 
 <!--landing-carousel-->
         <div class="carousel">
@@ -42,49 +40,52 @@
         </div>
 
         <div class="template-card">
-            <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d" alt="Business Pro Template" class="template-image">
+            <img id="pImage1" src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d" alt="Business Pro Template" class="template-image">
             <div class="template-details">
-                <h2 class="template-name">Business Pro Template</h2>
-                <p class="template-description">A professional and sleek template perfect for businesses looking to establish a strong online presence. Features include responsive design, custom contact forms, and integration with popular business tools.</p>
+                <h2 id="pName1" class="template-name">Business Pro Template</h2>
+                <p id="pDescription1" class="template-description">A professional and sleek template perfect for businesses looking to establish a strong online presence. Features include responsive design, custom contact forms, and integration with popular business tools.</p>
                 <div class="template-actions">
-                    <span class="template-price">$79.99</span>
-                    <button class="cart-btn">Add to Cart</button>
+                    <h2 id="pPrice1" class="template-price">$79.99</h2>
+                    <button id="addCart1" class="cart-btn">Add to Cart</button>
                     <a href="https://horiseon.ai/templates/business-pro" class="template-link">View Details</a>
                 </div>
             </div>
         </div>
 
         <div class="template-card">
-            <img src="https://images.unsplash.com/photo-1555421689-d68471e189f2" alt="Creative Portfolio Template" class="template-image">
+            <img id="pImage2" src="https://images.unsplash.com/photo-1555421689-d68471e189f2" alt="Creative Portfolio Template" class="template-image">
             <div class="template-details">
-                <h2 class="template-name">Creative Portfolio Template</h2>
-                <p class="template-description">Showcase your work in style with this modern and minimalist portfolio template. Ideal for artists, designers, and photographers. Includes a gallery feature, about page, and contact form.</p>
+                <h2 id="pName2" class="template-name">Creative Portfolio Template</h2>
+                <p id="pDescription2" class="template-description">Showcase your work in style with this modern and minimalist portfolio template. Ideal for artists, designers, and photographers. Includes a gallery feature, about page, and contact form.</p>
                 <div class="template-actions">
-                    <span class="template-price">$59.99</span>
-                    <button class="cart-btn">Add to Cart</button>
+                    <span id="pPrice2" class="template-price">$59.99</span>
+                    <button id="addCart2" class="cart-btn">Add to Cart</button>
                     <a href="https://horiseon.ai/templates/creative-portfolio" class="template-link">View Details</a>
                 </div>
             </div>
         </div>
 
         <div class="template-card">
-            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71" alt="E-commerce Deluxe Template" class="template-image">
+            <img id="pImage3" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71" alt="E-commerce Deluxe Template" class="template-image">
             <div class="template-details">
-                <h2 class="template-name">E-commerce Deluxe Template</h2>
-                <p class="template-description">Launch your online store with our feature-rich e-commerce template. Includes product galleries, shopping cart functionality, secure checkout, and integration with popular payment gateways.</p>
+                <h2 id="pName3" class="template-name">E-commerce Deluxe Template</h2>
+                <p id="pDescription3" class="template-description">Launch your online store with our feature-rich e-commerce template. Includes product galleries, shopping cart functionality, secure checkout, and integration with popular payment gateways.</p>
                 <div class="template-actions">
-                    <span class="template-price">$99.99</span>
-                    <button class="cart-btn">Add to Cart</button>
+                    <span id="pPrice3" class="template-price">$99.99</span>
+                    <button id="addCart3" class="cart-btn">Add to Cart</button>
                     <a href="https://horiseon.ai/templates/ecommerce-deluxe" class="template-link">View Details</a>
                 </div>
             </div>
         </div>
     </div>
     
-    <footer class="footer">
-        <p>&copy; 2024 Shop Spot. All rights reserved.</p>
+    <footer>
+        <button>
+            <a href="contact.html"><h2>Contact Us</h2></a>
+        </button>
     </footer>
 
     <script src="../Assets/JS/shop.js"></script>
+    <script src="../Assets/JS/cart.js"></script>
 </body>
 </html>
