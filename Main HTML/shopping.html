@@ -3,29 +3,88 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>ShopSpot.Shop</title>
+    <title>Shop Spot - Website Templates</title>
+    <link rel="stylesheet" href="../Assets/CSS/shop.css" />
 </head>
 
 <body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="navbar-brand">Shop Spot</div>
+            <div class="navbar-right">
+                <div class="navbar-cart">
+                    <div class="mode-switch">
+                        <label class="switch">
+                            <input type="checkbox" id="modeToggle">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    Cart (0)
+                </div>
+            </div>
+        </nav>
 
-<!-- 
+<!--landing-carousel-->
+        <div class="carousel">
+            <div class="carousel-inner" style="transform: translateX(-100%);">
+                <div class="carousel-item" data-product-name="Business Pro Template">
+                    <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d" alt="Business Pro Template">
+                </div>
+                <div class="carousel-item" data-product-name="Creative Portfolio Template">
+                    <img src="https://images.unsplash.com/photo-1555421689-d68471e189f2" alt="Creative Portfolio Template">
+                </div>
+                <div class="carousel-item" data-product-name="E-commerce Deluxe Template">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71" alt="E-commerce Deluxe Template">
+                </div>
+            </div>
+            <a href="#" class="carousel-control left">&lt;</a>
+            <a href="#" class="carousel-control right">&gt;</a>
+        </div>
+
+        <div class="template-card">
+            <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d" alt="Business Pro Template" class="template-image">
+            <div class="template-details">
+                <h2 class="template-name">Business Pro Template</h2>
+                <p class="template-description">A professional and sleek template perfect for businesses looking to establish a strong online presence. Features include responsive design, custom contact forms, and integration with popular business tools.</p>
+                <div class="template-actions">
+                    <span class="template-price">$79.99</span>
+                    <button class="cart-btn">Add to Cart</button>
+                    <a href="https://horiseon.ai/templates/business-pro" class="template-link">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="template-card">
+            <img src="https://images.unsplash.com/photo-1555421689-d68471e189f2" alt="Creative Portfolio Template" class="template-image">
+            <div class="template-details">
+                <h2 class="template-name">Creative Portfolio Template</h2>
+                <p class="template-description">Showcase your work in style with this modern and minimalist portfolio template. Ideal for artists, designers, and photographers. Includes a gallery feature, about page, and contact form.</p>
+                <div class="template-actions">
+                    <span class="template-price">$59.99</span>
+                    <button class="cart-btn">Add to Cart</button>
+                    <a href="https://horiseon.ai/templates/creative-portfolio" class="template-link">View Details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="template-card">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71" alt="E-commerce Deluxe Template" class="template-image">
+            <div class="template-details">
+                <h2 class="template-name">E-commerce Deluxe Template</h2>
+                <p class="template-description">Launch your online store with our feature-rich e-commerce template. Includes product galleries, shopping cart functionality, secure checkout, and integration with popular payment gateways.</p>
+                <div class="template-actions">
+                    <span class="template-price">$99.99</span>
+                    <button class="cart-btn">Add to Cart</button>
+                    <a href="https://horiseon.ai/templates/ecommerce-deluxe" class="template-link">View Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
     
-TODO: Add a nav element with a list of links to other MAIN pages on the site. Exclude Secondary.
-TODO: Add a cart button and javascript functionality in the same nav element that stores the cart items in local storage to be called
-      on the checkout page
+    <footer class="footer">
+        <p>&copy; 2024 Shop Spot. All rights reserved.</p>
+    </footer>
 
-TODO: Add a carousel element that displays featured products(index 0-2). Make each element a clickable link to the specific product page.
-TODO: OPTIONAL- Add Javascript functionality that allows for toggling of featured products from list of all products on admin page.
-TODO: OPTIONAL- Add Javascript functionality that allows for the building of elements from a form that adds products on the admin page.
-
-
-TODO: Add an element for a full list of products. Including name, price, small image, and link to specific product page.
-TODO: Add button for adding product to cart. This will add the product to the cart list in local storage.
-TODO: OPTIONAL- Allow the list to be sorted by name, price, and category.
-
-//TODO: Add a footer with a link to the contact page(This will be the footer of all pages except for the contact page itself)
-
--->
-
+    <script src="../Assets/JS/shop.js"></script>
 </body>
 </html>
