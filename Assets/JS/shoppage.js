@@ -37,23 +37,3 @@ buttons.forEach(button => {
 
 
 
-const enableDarkmode = () => {
-  document.body.classList.add('darkmode')
-  localStorage.setItem('darkmode', 'active')
-  
-}
-
-const disableDarkmode = () => {
-  if(darkmode === "active") enableDarkmode()
-  document.body.classList.remove('darkmode')
-  localStorage.setItem('darkmode', null)
-}
-
-
-let darkmode = localStorage.getItem('darkmode')
-const themeSwitch = document.getElementById('theme-switch')
-
-themeSwitch.addEventListener("click", () => {
-  darkmode = localStorage.getItem('darkmode')
-  darkmode !== "active" ? enableDarkmode() : disableDarkmode()
-})
