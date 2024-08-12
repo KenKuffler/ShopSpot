@@ -184,9 +184,9 @@ p {
     justify-content: space-around;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #fff6e6;
+    background-color: var(--background);
     margin-bottom: 0;
-    border-top: solid #cf4b02;
+    border-top: solid var(--accent);
 }
 
 footer h2 {
@@ -201,8 +201,8 @@ footer a {
 }
 
 footer button {
-  border-bottom: solid #cf4b02;
-  background-color: #fff6e6;
+  border-bottom: solid var(--accent);
+  background-color: var(--background);
   border-left: none;
   border-right: none;
   border-top: none;

@@ -27,6 +27,7 @@ footer {
     color: var(--accent);
     padding: 25px;
     font-size:25px;
+    background-color: var(--background);
     
 
 }
