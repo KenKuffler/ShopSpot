@@ -91,7 +91,19 @@ header h1 {
   color: var(--accent);
   -webkit-text-fill-color:var(--accent);
   -webkit-text-stroke: 1px black;
+  text-decoration: none;
 }
+
+header > h1 > a:active {
+  text-decoration: none;
+}
+
+header > h1 > a:visited {
+  text-decoration: none;
+  color: var(--accent);
+}
+
+
 /* Dropdown Button */
 .dropBtn {
   margin-left: 3rem;
@@ -153,7 +165,8 @@ header h1 {
 .cartBtn a {
   color:var(--text-color);
   text-decoration: none;
-  
+}
+
 h2 {
     display: block;
     text-align: center;
