@@ -3,20 +3,35 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>ShopSpot.Shop</title>
+    <title>ShopSpot-Checkout</title>
+    <link rel="stylesheet" href="../Assets/CSS/styles.css"/>
+    <link rel="stylesheet" href="../Assets/CSS/checkout.css"/>
 </head>
 
 <body>
 
-<!--
-
-TODO: Add a nav element with a list of links to other MAIN pages on the site. Exclude Secondary.
-
-TODO: List of logged products that allows for a nav link back to the specific product page, allows for removal of item from list,
+<!--TODO: Add a nav element with a list of links to other MAIN pages on the site. Exclude Secondary.-->
+<header>
+    <nav class="dropdown">
+        <button onclick="dropDown()" class="dropBtn">More</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="shopping.html">Shopping</a>
+            <a href="about.html">About US</a>
+            <a href="admin.html">Admin</a>
+        </div>
+    </nav>
+    <h1>ShopSpot©</h1>
+    <button class="cartBtn"><a href="checkout.html">🛒</a></button>         
+</header>
+<!--TODO: List of logged products that allows for a nav link back to the specific product page, allows for removal of item from list,
       and allows for the total price of the item to be displayed and to be added to the total price of all items in the cart.
 TODO: In same built elements, add price of all items together and displays total price.
 
 -->
+<main>
+    <h2>Checkout</h2>
+
+</main>
 
 <!--TODO: Add a footer element with a link to the contact page(This will be the footer of all pages except for the contact page itself)-->
     <footer>
@@ -24,5 +39,8 @@ TODO: In same built elements, add price of all items together and displays total
             <a href="contact.html"><h2>Contact Us</h2></a>
         </button>
     </footer>
+
+    <script src="../Assets/JS/logic.js"></script>
+    <script src="../Assets/JS/checkout.js"></script>
 </body>
 </html>

@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <title>ShopSpot</title>
-    <link rel="stylesheet" href="./Assets/CSS/form.css"/>
-    <link rel="stylesheet" href="./Assets/CSS/form.css"/>
+    <link rel="stylesheet" href="./Assets/CSS/styles.css"/>
+    <link rel="stylesheet" href="./Assets/CSS/shop.css"/>
+    <link rel="stylesheet" href="./Assets/CSS/about.css"/>
 </head>
 
 <body>
@@ -29,20 +30,51 @@ TODO: Add a cart button and javascript functionality in the same nav element tha
     </header>
 <main>    
 <!--TODO: Add a cover element like .hero from the Horiseon Week 1 challenge with a carousel of chosen company images.-->
-
+<div class="carousel">
+    <div class="carousel-inner" style="transform: translateX(-100%);">
+        <div class="carousel-item" data-product-name="Seamless Functionality">
+            <img src="./Assets/Images/index-carousel-1.jpeg" alt="Carousel 1">
+        </div>
+        <div class="carousel-item" data-product-name="Sleek Designs">
+            <img src="./Assets/Images/index-carousel-2.png" alt="Carousel 2">
+        </div>
+        <div class="carousel-item" data-product-name="Affordable Pricing Options">
+            <img src="./Assets/Images/index-carousel-3.jpg" alt="Carousel 3">
+        </div>
+    </div>
+    <a href="#" class="carousel-control left">&lt;</a>
+    <a href="#" class="carousel-control right">&gt;</a>
+</div>
 
 
 <!--TODO: Add an element for the brief mission/welcome statement-->
-
+<section class = "container-about">
+    <h2>Mission Statement</h2>
+    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Et commodo quam erat porttitor 
+        potenti tempus id aliquam. Platea rutrum platea ornare cras; auctor molestie. 
+        Parturient parturient libero interdum penatibus habitasse nisl. Cursus taciti 
+        lorem diam habitasse dictumst id. Donec gravida morbi ex nam efficitur sodales 
+        libero vitae. Neque justo est rutrum magnis viverra hendrerit sed neque. 
+        Sapien nulla porta scelerisque est est vitae posuere vitae. Arcu fusce at 
+        commodo diam pharetra.</p>   
+</section>
 <!--TODO: Add an element that displays an image of the primary product and a big bold link to the MAIN shopping page.-->
+<section>
+    <h2 style="text-decoration: underline;">Shop Products(Click Image Below)</h2>
+    <a href ="./Main HTML/shopping.html"><img class="index-image" src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d" alt="Business Pro Template"></a>
+</section>
 </main>
 <!--TODO: Add a footer with a link to the contact page(This will be the footer of all pages except for the contact page itself)-->
+
+<script src="./Assets/JS/shoppage.js"></script>
 <footer>
     <button>
         <a href="contact.html"><h2>Contact Us</h2></a>
     </button>
 </footer>
 <script src="./Assets/JS/logic.js"></script>
+<script src="./Assets/JS/shop.js"></script>
+<script src="./Assets/JS/cart.js"></script>
 
 </body>
 </html>
