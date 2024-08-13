@@ -46,7 +46,7 @@ footer button {
 
 h2 {
     text-align: center;
-    font-size: 45px;
+    font-size: 30px;
  
     -webkit-text-fill-color:var(--accent);
     -webkit-text-stroke: 1px black;
@@ -105,69 +105,10 @@ h2 {
     
     
 }
-.shopcarousel {
+.li-img {
+    list-style-type: none;
+    margin-left: 28%;
     
-    width: 100vw;
-    height: 75vh;
-    position: relative;
-}
-
-.shoptcarousel > ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.slide {
-    position: absolute;
-    inset: 0;
-    opacity: 0;
-    transition: 200ms opacity ease-in-out;
-    transition-delay: 200ms;
-}
-
-.slide > img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: 100%;
-    object-position: center;
-}
-
-.slide[data-active] {
-    opacity: 1;
-    z-index: 1;
-    transition-delay: 0ms;
-}
-
-.carousel-button {
-   position: absolute;
-   z-index: 2;
-   background: none;
-   border: none;
-   font-size: 4rem;
-   top:50%; 
-   transform: translateY(-50%);
-   color: rgba(255, 255, 255, .5);
-   cursor: pointer;
-   border-radius: .25rem;
-   padding: 0 .5rem;
-   
-}
-
-.carousel-button:hover,
-.carousel-button:focus {
-    color: white;
-    
-}
-
-
-
-.carousel-button.prev {
-    left: 1rem;
-}
-.carousel-button.next {
-    right: 1rem;
 }
 
 

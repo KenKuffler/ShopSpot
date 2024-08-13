@@ -1,11 +1,11 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Assets/CSS/shoppage.css"/>
+    <link rel="stylesheet" href="/Assets/CSS/styles.css">
     <title>ShoppingPage</title>
 </head>
 <body>
@@ -28,35 +28,25 @@
 
  
 <main> 
-    <section aria-label="shop-photos">
-        <div class="shopcarousel" data-carousel>
-            <button class="carousel-button prev" data-carousel-button="prev">⬅️</button>
-            <button class="carousel-button next" data-carousel-button="next">➡️</button>
-            <ul data-slides>
-                <li class="slide" data-active>
-                    <img src="/Assets/Images/mailbox.png" alt="mailbox">
-                </li>
-                <li class="slide">
-                    <img src="/Assets/Images/header.avif" alt="mailbox">
-                </li>
-                <li class="slide">
-                    <img src="/Assets/Images/custom-nike-dunk-low-by-you-su24.png" alt="mailbox">
-                </li>
-                
-            </ul>
-        </div>
+    <ul>
+        <li class="li-img">
+            <img id="pImage2" src="https://images.unsplash.com/photo-1555421689-d68471e189f2" alt="Creative Portfolio Template" style="height: 400px">
+         </li>
+    </ul>
+        
 
     </section>  
     <section class="h2-box">
-        <h2>Nike Dunks</h2> 
-        <h2>$150</h2>
+        <h2 id="pName2">Creative Portfolio Template</h2> 
+        <h2 id="pPrice2">$59.99</h2>
     </section>
 
     <section>
         <ul class="section-container">
-            <li>Best Skate shoe ever.</li>
-            <li>blah blah</li>
-            <li>lots of wordslots of wordslots of wordslots of wordslots of wordslots of wordslots of wordslots of words</li>
+            <li id="pDescription2">Showcase your work in style with this modern and minimalist portfolio template.</li>
+            <li>Ideal for artists, designers, and photographers.</li>
+            <li>Includes a gallery feature, about page, and contact form.</li>
+            
         </ul>
         
         
@@ -70,10 +60,12 @@
 
 
 <footer>
-    <p>© 2024 ShopSpot Student Productions. All rights reserved.</p>
+    <a href="contact.html">Contact Us</a>
 </footer>
    
 <script src="/Assets/JS/shoppage.js"></script>
+<script src="/Assets/JS/logic.js"></script>
+<script src="/Assets/JS/cart.js"></script>
 
 </body>
 
