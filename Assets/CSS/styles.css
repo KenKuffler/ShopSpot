@@ -54,7 +54,7 @@ body {
   margin-left: -10%;
 }
 #theme-switch svg{
-  fill:var(--accent)
+  fill:var(--accent);
 }
 #theme-switch svg:last-child{
   display:none;
@@ -335,7 +335,7 @@ p {
 
   .cartBtn a {
     color: #cf4b02;
-    text-decoration: none;;
+    text-decoration: none;
   }
 
 
