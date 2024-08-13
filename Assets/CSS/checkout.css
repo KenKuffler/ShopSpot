@@ -1,6 +1,10 @@
+body{
+  background-color: var(--background);
+}
+
 main > h2 {
     font-size: 3rem;
-    color: #cf4b02;
+    color: var(--accent);
     align-content: center;
     text-decoration: underline;
 }
@@ -13,7 +17,7 @@ main > h2 {
     margin-left: 15%;
     padding-right: calc(var(--bs-gutter-x) * 0.5);
     padding-left: calc(var(--bs-gutter-x) * 0.5);
-    background-color: #fff6e6;
+    background-color: var(--background);
     display: inline-flex;
     max-height: 10rem;
     }
@@ -31,7 +35,7 @@ main > h2 {
 
     .container h2 {
         font-size: 1.5rem;
-        color: #333;
+        color: var(--text-color);
         margin-left: 1rem;
         align-content: center;
         text-decoration: underline;
@@ -39,7 +43,7 @@ main > h2 {
 
     .container > .text {
         font-size: 1rem;
-        color: #333;
+        color: var(--text-color);
         margin-left: 1rem;
         align-content: center;
         flex-direction: column;
@@ -89,7 +93,7 @@ main > h2 {
 
       .total-price {
         font-size: 1.5rem;
-        color: #333;
+        color: var(--text-color);
         margin-left: 1rem;
         align-content: center;
         text-decoration: underline;}

@@ -11,6 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 98vh;
+    background-color: var(--background);
 
 }
 
@@ -21,7 +22,7 @@ body {
 
 
 footer {
-    border-top: solid var(--accent);
+    border-top: solid var(--text-color);
     background-size: cover;
     text-align: center;
     color: var(--accent);
@@ -36,7 +37,7 @@ footer button {
     background-color: var(--background);
     cursor: pointer;
     font-size: 25px;
-    color: var(--accent)
+    color: var(--text-color)
 }
 
 
@@ -94,8 +95,8 @@ h2 {
     list-style:square;
     height: 150px;
     text-align: left;
-    font-size: 28px;
-    -webkit-text-fill-color:var(--accent);
+    font-size: 25px;
+    -webkit-text-fill-color:var(--text-color);
     -webkit-text-stroke: .25px black;
     z-index: 1;
     margin-left: 20%;
