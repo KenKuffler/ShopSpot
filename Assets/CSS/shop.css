@@ -1,27 +1,13 @@
-:root {
-    --bg-color: #ffffff;
-    --text-color: #333333;
-    --primary-color: #FF8C00; /* Orange */
-    --secondary-color: #FF4500; /* Deep Orange */
-    --accent-color: #FFA500; /* Light Orange */
-    --card-bg: #fff6e6;
-}
 
-.dark-mode {
-    --bg-color: #000000;
-    --text-color: #ffffff;
-    --primary-color: #008080; /* Teal */
-    --secondary-color: #20B2AA; /* Light Sea Green */
-    --accent-color: #40E0D0; /* Turquoise */
-    --card-bg: #004d4d;
-}
+
+
 
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    background-color: var(--background);
+    color: var(--accent);
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -241,8 +227,8 @@ input:checked + .slider:before {
 }
 
 .cart-btn {
-    background-color: var(--primary-color);
-    color: white;
+    background-color: var(--background);
+    color: var(--accent);
 }
 
 .cart-btn:hover {
@@ -251,7 +237,7 @@ input:checked + .slider:before {
 
 .template-link {
     background-color: var(--secondary-color);
-    color: white;
+    color: var(--accent);
 }
 
 .template-link:hover {

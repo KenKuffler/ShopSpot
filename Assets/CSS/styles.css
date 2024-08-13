@@ -20,19 +20,16 @@ element, and class styles for webpage headers
 
 /*dark mode and light mode settings */
 
-.light-body {
-  background-color:  #fff6e6;
-}
-
-.dark-body {
-  background-image: #000000;
+body {
+  transition: background-color 0.3s, color 0.3s;
+  background-color: var(--background);
 }
 
 :root {
   --accent: #cf4b02;
   --background: #FFF6E6;
-  --text-color: #FFA500;
-  background-color:#FFF6E6 ;
+  --text-color: black;
+  
   
 }
 
@@ -40,7 +37,7 @@ element, and class styles for webpage headers
   --accent: #00a395;
   --background: rgb(60, 60, 60);
   --text-color: #fff;
-  background-color: rgb(60, 60, 60);
+  --background-color: rgb(60, 60, 60);
 
 }
 #theme-switch {
@@ -101,6 +98,9 @@ header > h1 > a:active {
 header > h1 > a:visited {
   text-decoration: none;
   color: var(--accent);
+}
+footer{
+  color: var(--text-color)
 }
 
 
