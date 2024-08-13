@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Assets/CSS/shoppage.css"/>
+    <link rel="stylesheet" href="/Assets/CSS/styles.css">
     <title>ShoppingPage</title>
 </head>
 <body>
@@ -27,35 +28,24 @@
 
  
 <main> 
-    <section aria-label="shop-photos">
-        <div class="shopcarousel" data-carousel>
-            <button class="carousel-button prev" data-carousel-button="prev">⬅️</button>
-            <button class="carousel-button next" data-carousel-button="next">➡️</button>
-            <ul data-slides>
-                <li class="slide" data-active>
-                    <img src="/Assets/Images/mailbox.png" alt="mailbox">
-                </li>
-                <li class="slide">
-                    <img src="/Assets/Images/header.avif" alt="mailbox">
-                </li>
-                <li class="slide">
-                    <img src="/Assets/Images/custom-nike-dunk-low-by-you-su24.png" alt="mailbox">
-                </li>
-                
-            </ul>
-        </div>
+    <ul>
+        <li class="li-img">
+            <img id="pImage3" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71" alt="E-commerce Deluxe Template" style="height: 400px">
+         </li>
+    </ul>
+        
 
     </section>  
     <section class="h2-box">
-        <h2>Nike Dunks</h2> 
-        <h2>$150</h2>
+        <h2 id="pName3">E-commerce Deluxe Template</h2> 
+        <h2 id="pPrice3">$99.99</h2>
     </section>
 
     <section>
         <ul class="section-container">
-            <li>Best Skate shoe ever.</li>
-            <li>blah blah</li>
-            <li>lots of wordslots of wordslots of wordslots of wordslots of wordslots of wordslots of wordslots of words</li>
+            <li id="pDescription3">Launch your online store with our feature-rich e-commerce template.</li>
+            <li>Includes product galleries, shopping cart functionality, secure checkout, and integration with popular payment gateways.</li>
+            
         </ul>
         
         
@@ -69,10 +59,12 @@
 
 
 <footer>
-    <p>© 2024 ShopSpot Student Productions. All rights reserved.</p>
+    <a href="contact.html">Contact Us</a>
 </footer>
    
 <script src="/Assets/JS/shoppage.js"></script>
+<script src="/Assets/JS/logic.js"></script>
+<script src="/Assets/JS/cart.js"></script>
 
 </body>
 
