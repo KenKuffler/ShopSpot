@@ -19,7 +19,7 @@ element, and class styles for webpage headers
 */
 
 /*dark mode and light mode settings */
- index-update
+
 .light-body {
   background-color:  #fff6e6;
 }
@@ -27,6 +27,7 @@ element, and class styles for webpage headers
 .dark-body {
   background-image: #000000;
 }
+
 :root {
   --accent: #cf4b02;
   --background: #FFF6E6;
@@ -40,7 +41,6 @@ element, and class styles for webpage headers
   --background: rgb(60, 60, 60);
   --text-color: #fff;
   background-color: rgb(60, 60, 60);
-  
 
 }
 #theme-switch {
@@ -189,6 +189,74 @@ p {
     color: #000000;
 }
 
+ cart-function
+/* Dropdown Button */
+.dropBtn {
+    margin-left: 1rem;
+    background-color: #046767;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #fff6e6;
+    border-bottom: solid #cf4b02;
+    
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropBtn:hover, .dropBtn:focus {
+    background-color: #06b8b8;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 9999;
+
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #046767;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px #000000;
+    right: -3rem;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #06b8b8;}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+  .cartBtn { 
+    margin-right: 1rem;
+    color: #cf4b02;
+    padding: 16px;
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+    background-color: #fff6e6;
+    border-bottom: solid #cf4b02;
+  }
+
+  .cartBtn a {
+    color: #cf4b02;
+    text-decoration: none;;
+  }
+
+ main
 
 /* Dropdown Button */
 .dropBtn {
