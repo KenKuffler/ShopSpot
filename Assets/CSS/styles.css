@@ -19,6 +19,14 @@ element, and class styles for webpage headers
 */
 
 /*dark mode and light mode settings */
+ index-update
+.light-body {
+  background-color:  #fff6e6;
+}
+
+.dark-body {
+  background-image: #000000;
+}
 :root {
   --accent: #cf4b02;
   --background: #FFF6E6;
@@ -32,6 +40,7 @@ element, and class styles for webpage headers
   --background: rgb(60, 60, 60);
   --text-color: #fff;
   background-color: rgb(60, 60, 60);
+  
 
 }
 #theme-switch {
@@ -144,7 +153,13 @@ header h1 {
 .cartBtn a {
   color:var(--text-color);
   text-decoration: none;
+  
+h2 {
+    display: block;
+    text-align: center;
+    color: #cf4b02;
 }
+
 
 .cartBtn:hover, .cartBtn:focus {
   background-color: var(--accent);
@@ -166,17 +181,80 @@ main {
   flex-grow: 1;
 }
 
-
-
-
-
-
 h2,
+
 p {
     display: block;
     text-align: center;
+    color: #000000;
 }
 
+
+/* Dropdown Button */
+.dropBtn {
+    margin-left: 1rem;
+    background-color: #046767;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #fff6e6;
+    border-bottom: solid #cf4b02;
+    
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropBtn:hover, .dropBtn:focus {
+    background-color: #06b8b8;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 9999;
+
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #046767;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px #000000;
+    right: -3rem;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #06b8b8;}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+  .cartBtn { 
+    margin-right: 1rem;
+    color: #cf4b02;
+    padding: 16px;
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+    background-color: #fff6e6;
+    border-bottom: solid #cf4b02;
+  }
+
+  .cartBtn a {
+    color: #cf4b02;
+    text-decoration: none;;
+  }
 
 
   footer {
@@ -242,4 +320,14 @@ footer button:hover, footer button:focus {
   .dropBtn {
     margin-left: 0rem;
   }
+}
+
+.index-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  width: 50%;
+  margin-left: 25%;
+  margin-bottom: 1rem;
 }
