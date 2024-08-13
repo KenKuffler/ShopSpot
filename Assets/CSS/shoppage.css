@@ -28,8 +28,14 @@ footer {
     padding: 25px;
     font-size:25px;
     background-color: var(--background);
-    
+    text-decoration: none;
+}
 
+footer a:active {
+    text-decoration: none;
+}
+footer a:visited {
+    text-decoration: none;
 }
 footer button {
     border: none;
@@ -106,8 +112,11 @@ h2 {
     
 }
 .li-img {
+    width:100%;
     list-style-type: none;
+    position: relative;
     margin-left: 28%;
+
     
 }
 
@@ -178,6 +187,9 @@ main {
 
 
 @media screen and (max-width: 390px) {
+    .li-img {
+        
+    }
     header {
         width: 100%;
         margin:0 0;
