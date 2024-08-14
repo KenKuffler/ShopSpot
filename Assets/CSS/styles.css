@@ -117,7 +117,7 @@ footer{
 
 /* Dropdown button on hover & focus */
 .dropBtn:hover, .dropBtn:focus {
-  background-color: rgb(205, 205, 205);
+  background-color: var(--background);
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -131,7 +131,7 @@ footer{
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #000000;
+  background-color: var(--background);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px #000000;
   right: -3rem;
@@ -140,14 +140,14 @@ footer{
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  color: #fff;
+  color: var(--text-color);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #085f99;}
+.dropdown-content a:hover {background-color: var(--background);}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
@@ -206,7 +206,7 @@ p {
 /* Dropdown Button */
 .dropBtn {
     margin-left: 1rem;
-    background-color: #046767;
+    background-color: var(--background);
     padding: 16px;
     font-size: 20px;
     border: none;
@@ -218,7 +218,7 @@ p {
   
   /* Dropdown button on hover & focus */
   .dropBtn:hover, .dropBtn:focus {
-    background-color: #06b8b8;
+    background-color: var(--background);
   }
   
   /* The container <div> - needed to position the dropdown content */
@@ -233,7 +233,7 @@ p {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #046767;
+    background-color: var(--background);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px #000000;
     right: -3rem;
@@ -286,7 +286,7 @@ p {
   
   /* Dropdown button on hover & focus */
   .dropBtn:hover, .dropBtn:focus {
-    background-color: #06b8b8;
+    background-color: white;
   }
   
   /* The container <div> - needed to position the dropdown content */
@@ -302,7 +302,7 @@ p {
     z-index: 9999;
     display: none;
     position: absolute;
-    background-color: #046767;
+    background-color: var(--accent);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px #000000;
     right: -3rem;
@@ -310,14 +310,14 @@ p {
   
   /* Links inside the dropdown */
   .dropdown-content a {
-    color: #fff;
+    color: var(--text-color);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
   }
   
   /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #06b8b8;}
+  .dropdown-content a:hover {background-color: var(--accent);}
   
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
   .show {display:block;}
@@ -350,7 +350,7 @@ p {
 }
 
 footer h2 {
-    color: #000000;
+    color: var(--text-color);
     text-align: center;
     padding: 1rem; 
 }

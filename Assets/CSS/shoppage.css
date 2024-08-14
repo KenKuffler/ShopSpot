@@ -84,7 +84,7 @@ footer button {
     
 }
 #button1:hover, #button1:focus{
-    background-color: #007b71;
+    background-color: var(--accent);
 }
 
 
