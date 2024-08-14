@@ -229,6 +229,29 @@ p {
   .cartBtn a {
     color: #cf4b02;
     text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #06b8b8;}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+  .cartBtn { 
+    margin-right: 1rem;
+    color: #cf4b02;
+    padding: 16px;
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+    background-color: #fff6e6;
+    border-bottom: solid #cf4b02;
+  }
+
+  .cartBtn a {
+    color: #cf4b02;
+    text-decoration: none;
   }
 
 
