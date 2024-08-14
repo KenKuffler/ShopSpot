@@ -34,14 +34,9 @@ footer button {
 }
 
 
-
-
-
-
-h2 {
-    text-align: center;
+.h2 {
     font-size: 30px;
- 
+    margin-top: 50%;
     -webkit-text-fill-color:var(--accent);
     -webkit-text-stroke: 1px black;
     border-bottom: solid var(--accent);
@@ -52,9 +47,15 @@ h2 {
     list-style: none;
     flex-direction: column;
     align-content: center;
-    margin-top: -1%;
     margin-left: 2%;
     float: left;
+     justify-content: space-around;
+    font-size: 25px;
+    margin-top: 6%; 
+    -webkit-text-fill-color:var(--accent);
+    -webkit-text-stroke: 1px black;
+    border-bottom: solid var(--accent);
+    
    
     
     
@@ -75,8 +76,8 @@ h2 {
     
     
 }
-.button1:hover, .button1:focus{
-    background-color: #007b71;
+#button1:hover, #button1:focus{
+    background-color: var(--accent);
 }
 
 
@@ -86,24 +87,30 @@ h2 {
     flex-direction: column;
     display: flex;
     list-style:square;
-    height: 150px;
+    height: 200px;
     text-align: left;
-    font-size: 25px;
+    font-size: 30px;
     -webkit-text-fill-color:var(--text-color);
     -webkit-text-stroke: .25px black;
     z-index: 1;
-    margin-left: 20%;
+    margin-left: 30%;
+    margin-top:5%;
     justify-content: space-between;
+}
 
-   
+
+img {
+    list-style: none;
+    position: relative;
+    display: flex;
+    height: 400px;
+    margin-left: 38%;
     
-    
+
 }
-.li-img {
-    list-style-type: none;
-    margin-left: 28%;
-    
-}
+
+
+
 
 
 
@@ -129,6 +136,7 @@ main {
         font-size: 20px;
         margin-top: 75%;
         margin: 0 0;
+        height: 200px;
     
         
     }
@@ -136,6 +144,7 @@ main {
     h2 {
         width: 100%;
         font-size:23px;
+        
         
     
     }
@@ -146,7 +155,7 @@ main {
         flex-direction: column;
         text-align: center;
         margin-left: 2%;
-               
+        justify-content: space-around;       
     
 
     }
@@ -200,9 +209,6 @@ main {
         text-align: center;
         margin-left: 1%;
        
-               
-    
-
     }
 
     .section-container{
@@ -213,14 +219,15 @@ main {
     
     .button1 {
         width:100%;
-    }    
 
-.li-img {
+   }    
+
+   .li-img {
     list-style-type: none;
     margin-left: 0%;
     
-}
-.button1 {
+   }
+   .button1 {
     padding: 20px;
     background-color:rgb(223, 119, 0);
     font-size:20px;
@@ -229,10 +236,7 @@ main {
     padding:25px;
     margin-left:10%;
     width: 75%;
-    text-align: center;
-
-    
-    
+    text-align: center;   
 }
 }
 
