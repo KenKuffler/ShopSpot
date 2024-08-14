@@ -83,8 +83,13 @@ footer button {
     
     
 }
+<<<<<<< HEAD
 #button1:hover, #button1:focus{
+    background-color: var(--accent);
+=======
+.button1:hover, .button1:focus{
     background-color: #007b71;
+>>>>>>> main
 }
 
 
@@ -225,7 +230,16 @@ main {
     
     .button1 {
         width:100%;
+<<<<<<< HEAD
     }
+
+    .li-img {
+        
+    }
+
+  
+
+
 
   
        
@@ -233,6 +247,9 @@ main {
     
 
     
+=======
+    }    
+>>>>>>> main
 }
 
 
