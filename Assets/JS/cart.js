@@ -48,10 +48,10 @@ function addToCart(event) {
         // Store the updated cart items string in session storage
         sessionStorage.setItem('cartItems', updatedCartItemsString);
 
-        // Optionally, you can display a success message
+        // display a success message
         alert('Item added to cart!');
 
-        // Optionally, you can log the updated cart items
+        // log the updated cart items
         console.log(`Updated cartItems: ${updatedCartItemsString}`);
     } else {
         console.error('One or more elements not found.');
