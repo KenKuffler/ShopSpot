@@ -57,7 +57,6 @@ main > h2 {
     @media (min-width: 576px) {
         .container-sm, .container {
             max-width: 540px;
-            margin-right: 20rem;
         }
       }
       @media (min-width: 768px) {
