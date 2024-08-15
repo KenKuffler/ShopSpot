@@ -19,7 +19,7 @@ function populateCheckoutPage() {
                 sectionElement.appendChild(imageElement);
 
                 const divElement1 = document.createElement('div');
-                divElement1.classList.add('text');
+                divElement1.classList.add('text'); // Added class for styling
                 sectionElement.appendChild(divElement1);
 
                 const nameElement = document.createElement('h2');
@@ -31,7 +31,7 @@ function populateCheckoutPage() {
                 divElement1.appendChild(descriptionElement);
 
                 const divElement2 = document.createElement('div');
-                divElement2.classList.add('price');
+                divElement2.classList.add('price'); // Added class for styling
                 sectionElement.appendChild(divElement2);
 
                 const priceElement = document.createElement('p');
@@ -86,10 +86,10 @@ function displayTotalPrice() {
                 // Debug log to check the structure and price
                 console.log('Cart Item:', cartItem);
 
-                // Clean up the price string by removing non-numeric characters except the decimal point
+                // make for a non NaN result byremoving non-numeric characters except the decimal point
                 let cleanedPrice = cartItem.price.replace(/[^0-9.]/g, '');
 
-                // Convert to a floating point number
+                // Convert to a floating point number so the total prices can be added together properly
                 const itemPrice = parseFloat(cleanedPrice);
                 console.log('Cleaned Price:', cleanedPrice);  // Debug log to check cleaned price
                 console.log('Parsed Price:', itemPrice);       // Debug log to check parsed price
