@@ -86,7 +86,7 @@ function displayTotalPrice() {
                 // Debug log to check the structure and price
                 console.log('Cart Item:', cartItem);
 
-                // make for a non NaN result byremoving non-numeric characters except the decimal point
+                // make for a non NaN result by removing non-numeric characters except the decimal point
                 let cleanedPrice = cartItem.price.replace(/[^0-9.]/g, '');
 
                 // Convert to a floating point number so the total prices can be added together properly

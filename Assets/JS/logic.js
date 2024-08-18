@@ -38,3 +38,18 @@ function dropDown() {
     darkmode = localStorage.getItem('darkmode')
     darkmode !== "active" ? enableDarkmode() : disableDarkmode()
   })
+
+  //Admin login
+  const adminModal = document.getElementById('admin-modal');
+  if (adminModal) {
+    adminModal.addEventListener('click', (event) => {
+      const password = prompt('Please enter the password:');
+      if (password === 'password1234') {
+        window.location.href = 'admin.html';
+      } else {
+        alert('Invalid password');
+        event.preventDefault();
+      }
+    });
+  }
+

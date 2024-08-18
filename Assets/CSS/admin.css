@@ -1,0 +1,106 @@
+body{
+    background-color: var(--background);
+  }
+  
+  main > h2 {
+      font-size: 3rem;
+      color: var(--accent);
+      align-content: center;
+      text-decoration: underline;
+  }
+  
+  .container {
+      --bs-gutter-x: 1.5rem;
+      --bs-gutter-y: 0;
+      width: 50%;
+      margin-top: 2%;
+      margin-left: 25%;
+      padding-right: calc(var(--bs-gutter-x) * 0.5);
+      padding-left: calc(var(--bs-gutter-x) * 0.5);
+      background-color: var(--background);
+      display: inline-flex;
+      max-height: 15rem;
+      border: solid 5px var(--accent);
+      overflow-y: auto;
+      }
+  
+  .container:last-child {
+      margin-bottom: 5%;
+  }
+  
+    .container > .contact {
+          width: 15%;
+          height: 20%;
+          margin-top: 0%;
+      }
+  
+      .contact h2 {
+          font-size: 1.5rem;
+          color: var(--text-color);
+          margin-left: 0rem;
+          align-content: left;
+          text-decoration: underline;
+      }
+
+      .contact p {
+            font-size: 1rem;
+            color: var(--text-color);
+            margin-right: 1rem;
+            align-content: left;
+            text-decoration: underline;
+      }
+  
+      .container > .description {
+          font-size: 1rem;
+          color: var(--text-color);
+          margin-left: 0%;
+          align-content: center;
+          flex-direction: column;
+          border: solid 1px var(--accent);
+          width: 50rem;
+      }
+
+      .container > .delete {
+        font-size: 1rem;
+        color: var(--text-color);
+        margin-left: 1%;
+        align-content: center;
+        flex-direction: column;
+    }
+  
+      
+      @media (min-width: 576px) {
+          .container-sm, .container {
+              max-width: 380px;
+          }
+        }
+  
+        @media (min-width: 768px) {
+          .container-md, .container-sm, .container {
+            max-width: 720px;
+          }
+        }
+        @media (min-width: 992px) {
+          .container-lg, .container-md, .container-sm, .container {
+            max-width: 960px;
+          }
+        }
+        @media (min-width: 1200px) {
+          .container-xl, .container-lg, .container-md, .container-sm, .container {
+            max-width: 1140px;
+          }
+        }
+        @media (min-width: 1400px) {
+          .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+            max-width: 1320px;
+          }
+        }
+  
+        :root {
+          --bs-breakpoint-xs: 0;
+          --bs-breakpoint-sm: 576px;
+          --bs-breakpoint-md: 768px;
+          --bs-breakpoint-lg: 992px;
+          --bs-breakpoint-xl: 1200px;
+          --bs-breakpoint-xxl: 1400px;
+        }
