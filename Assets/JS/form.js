@@ -1,7 +1,6 @@
 // Get the form element
 const form = document.querySelector('form');
 
-// Add event listener to the form submit event
 form.addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent form submission
 
@@ -12,12 +11,11 @@ form.addEventListener('submit', function(event) {
     const descriptionElement = document.querySelector('#description');
     const reasonElement = document.querySelector('#reason');
 
-    // Check if the elements exist before accessing their values
-    const name = nameElement ? nameElement.value : '';
-    const email = emailElement ? emailElement.value : '';
-    const phone = phoneElement ? phoneElement.value : '';
-    const description = descriptionElement ? descriptionElement.value : '';
-    const reason = reasonElement ? reasonElement.value : '';
+    const name = nameElement.value;
+    const email = emailElement.value;
+    const phone = phoneElement.value;
+    const description = descriptionElement.value;
+    const reason = reasonElement.value;
 
     // Create an object to store the form info
     const formData = {
@@ -31,11 +29,28 @@ form.addEventListener('submit', function(event) {
     // Convert the form data to a string
     const formDataString = JSON.stringify(formData);
 
-    // Store the form data in local storage
-    localStorage.setItem('formData', formDataString);
-    console.log(`formData: ${formDataString}`);
+    // Retrieve existing form data from session storage
+    const existingFormDataString = sessionStorage.getItem('formDataArray');
+    let existingFormData = [];
     
+    // Check if there is existing form data and it is an array
+    if (existingFormDataString) {
+        existingFormData = JSON.parse(existingFormDataString);
+        if (!Array.isArray(existingFormData)) {
+            existingFormData = [];
+        }
+    }
+    
+    // Add the current form data to the existing form data array
+    existingFormData.push(formData);
+
+    // Convert the updated form data array to a string
+    const updatedFormDataString = JSON.stringify(existingFormData);
+
+    // Store the updated form data in session storage
+    sessionStorage.setItem('formDataArray', updatedFormDataString);
+    console.log(`Updated formData: ${updatedFormDataString}`);
+
     // Reset the form
     form.reset();
 });
-

@@ -14,11 +14,9 @@ TODO: General Sizing and Spacing formatting for text, product cards, etc.
 
 /* 
 
-element, and class styles for webpage headers 
+element, and class styles for webpage header and footer 
 
-*/
-
-/*dark mode and light mode settings */
+dark mode and light mode settings */
 
 body {
   transition: background-color 0.3s, color 0.3s;
@@ -302,3 +300,5 @@ footer button:hover, footer button:focus {
   top: 5px;
   margin-left: -20%;
 }
+
+/* Modal */
